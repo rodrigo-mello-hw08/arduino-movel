@@ -28,7 +28,7 @@ Adequar logica a proximidade dos sensores
 #define LINHA_DA_CURVA 3
 #define FRENTE 0
 #define TRAS 1
-#define LIMITE_MAX_PROXIMIDADE_LINHA 450
+#define LIMITE_MAX_PROXIMIDADE_LINHA 400
 #define LIMITE_MAX_PROXIMIDADE_QTD_LINHA 800
 #define LIMITE_MAX_PROXIMIDADE_BLOCO 430
 
@@ -50,6 +50,8 @@ int infra_linha_esquerdo_ativo = 0;
 int infra_linha_direito_ativo = 0;
 int infra_bloco_ativo = 0;
 int infra_qtd_linha_ativo = 0;
+int led_linha_direito_ativo = 0;
+int led_linha_esquerdo_ativo = 0;
 
 
 void setup()
