@@ -24,9 +24,7 @@
 A5 = sensor linha esquerdo
 A4 = sensor linha direito 
 3 = contador linha interrupcao
-2 = determinar interrupcao
-A1 = sensor qtd linha - retirar
-A0 = sensor proximidade bloco - provisorio
+A0 = sensor proximidade bloco 
 */
 
 //Variaveis globais
@@ -142,8 +140,8 @@ void realizar_curva_esquerda()
 {
     ligar_m_direito(FRENTE);
     ligar_m_esquerdo(FRENTE);
-    delay(200); //Todo: talvez aumentar debounce para permitir curva
-    debug("ESTOU EM CURVA");
+    delay(200);
+  
     ligar_m_direito(TRAS);
     ligar_m_esquerdo(FRENTE);
 
